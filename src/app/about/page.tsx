@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { InstagramEmbeds, type InstagramEmbedItem } from '@/components/InstagramEmbeds'
+import { Newsletter } from '@/components/Newsletter'
 import {
   GitHubIcon,
   InstagramIcon,
@@ -49,38 +50,6 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Prenumeruokite naujienas</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Prisidėkite prie prenumeratos ir gaukite laišką, kai paskelbsiu naują
-        straipsnį ar atnaujinimą. Atsisakyti prenumeratos galite bet kada.
-      </p>
-      <div className="mt-6 flex items-center">
-        <span className="flex min-w-0 flex-auto p-px">
-          <input
-            type="email"
-            placeholder="El. pašto adresas"
-            aria-label="El. pašto adresas"
-            required
-            className="w-full appearance-none rounded-[calc(var(--radius-md)-1px)] bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 outline outline-zinc-900/10 placeholder:text-zinc-400 focus:ring-4 focus:ring-teal-500/10 focus:outline-teal-500 sm:text-sm dark:bg-zinc-700/15 dark:text-zinc-200 dark:outline-zinc-700 dark:placeholder:text-zinc-500 dark:focus:ring-teal-400/10 dark:focus:outline-teal-400"
-          />
-        </span>
-        <Button type="submit" className="ml-4 flex-none">
-          Prenumeruoti
-        </Button>
-      </div>
-    </form>
-  )
-}
 
 function Reels() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -147,7 +116,7 @@ export default function About() {
           </div>
           
           {/* The mt-auto class pushes this div to the bottom of the flex container */}
-          <div className="mt-auto pt-8">
+          <div className="mt-10 pt-8">
             <Newsletter />
           </div>
         </div>
@@ -167,10 +136,10 @@ export default function About() {
               r.vaskelaite@gmail.com
             </SocialLink>
             <SocialLink href="https://www.linkedin.com/in/raminta-vaskelait%C4%97-713382b3" icon={LinkedInIcon} className="mt-4">
-              Sekti LinkedIn
+              Raminta Vaskelaitė
             </SocialLink>
             <SocialLink href="https://www.instagram.com/demone.dantiste" icon={InstagramIcon} className="mt-4">
-              Sekti Instagram
+              demone.dantiste
             </SocialLink>
           </ul>
         </div>
