@@ -55,6 +55,10 @@ function Reels() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
   const instagramItems: InstagramEmbedItem[] = [
     {
+      url: 'https://www.instagram.com/reel/DWi6S2wiBjX/',
+      thumbnailAlt: 'Instagram reel thumbnail',
+    },
+    {
       url: 'https://www.instagram.com/p/DUxnWL0CHZY/',
       thumbnailAlt: 'Instagram reel thumbnail',
     },
